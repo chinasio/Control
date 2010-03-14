@@ -1,0 +1,232 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Maticsoft.Web.Main" %>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>动软.Net代码自动生成器</title>
+    <meta content="代码生成,代码生成工具,codematic,.net 代码生成器,.net 代码生成工具,动软,自动生成代码,asp.net,自动生成.net代码,代码生成器,maticsoft,动软.Net代码自动生成器" name="description" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <link href="images/css.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        var GB_ROOT_DIR = "./greybox/";
+    </script>
+    <script type="text/javascript" src="greybox/AJS.js"></script>
+    <script type="text/javascript" src="greybox/AJS_fx.js"></script>
+    <script type="text/javascript" src="greybox/gb_scripts.js"></script>
+    <link href="greybox/gb_styles.css" rel="stylesheet" type="text/css" media="all" />
+    
+</head>
+<body bgcolor="#cccccc" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+    <table cellspacing="0" cellpadding="0" width="778" align="center" border="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="190">
+                    <link href="images/css.css" type="text/css" rel="stylesheet">
+                    <table cellspacing="0" cellpadding="0" width="100" border="0">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" >
+                                    <img height="81" src="images/top1.gif" width="190"></td>
+                            </tr>
+                            <tr>
+                                <td width="5" background="images/topc2.gif">
+                                    <img height="101" src="images/topc29.gif" width="5"></td>
+                                <td align="middle" width="185" background="images/topc29.gif">
+                                    <table cellspacing="0" cellpadding="0" width="170" border="0">
+                                        <form name="f" action="http://www.baidu.com/s">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="40">
+                                                        <font color="#ffffff">搜索：</font></td>
+                                                    <td width="120">
+                                                        <input class="input" id="key" name="wd" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        <input type="image" height="16" type="submit" width="29" src="images/go1.gif" border="0"></td>
+                                                </tr>
+                                        </form>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="100" border="0">
+        <tbody>
+            <tr>
+                <td>
+                    <img height="28" src="images/left6.gif" width="190"></td>
+            </tr>
+        </tbody>
+    </table>
+    </TD>
+    <td valign="top" width="588" bgcolor="#ffffff">
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tbody>
+                <tr>
+                    <td width="2%" background="images/topbg.gif" height="22">
+                    </td>
+                    <td align="right" width="49%" background="images/topbg.gif" bgcolor="#505050">
+                        <a class="0" href="http://www.maticsoft.com/" title="Maticsoft" rel="gb_page_fs[]">关于我们</a> 
+                        | <a class="0" href="http://www.maticsoft.com/softdown.aspx" title="Maticsoft" rel="gb_page_center[750, 530]">免费下载</a> |
+                        <a class="0" href="http://www.maticsoft.com/" target=_blank>进入动软</a> | <a class="0" href="Default.aspx">网站地图</a></td>
+                    <td align="right" width="1%" background="images/topbg.gif">
+                        &nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <img height="142" src="images/banner001.jpg" width="588"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tbody>
+                <tr>
+                    <td align="left" width="5%" bgcolor="#4b4b4b" height="23">
+                        <img height="23" src="images/top2.gif" width="2"></td>
+                    <td align="middle" width="95%" bgcolor="#4b4b4b">
+                        <a class="1" href="Default.aspx">首 页</a> <font color="#ffffff">|</font> <a class="1"
+                            href="gsjj.aspx">公司简介</a> <font color="#ffffff">|</font> <a class="1" href="gsxw.aspx">
+                                公司新闻</a> <font color="#ffffff">|</font> <a class="1" href="gsry.aspx">公司荣誉</a>
+                        <font color="#ffffff">|</font> <a class="1" href="cpzs.aspx">产品展示</a> <font color="#ffffff">
+                            |</font> <a class="1" href="lxwm.aspx">联系我们</a> <font color="#ffffff">|</font>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tbody>
+                <tr>
+                    <td bgcolor="#e1e2e2">
+                        <img height="19" src="images/t00.gif" width="2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    
+    <table cellspacing="0" cellpadding="0" width="778" align="center" border="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="190" bgcolor="#e7e7e7">
+                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td valign="top" height="25">
+                                    <table cellspacing="0" cellpadding="0" width="100" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td height="9">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table height="88" cellspacing="0" cellpadding="0" width="85%" border="0">
+                                        <tr>
+                                            <td align="center" height="23">
+                                               <asp:DataList ID="DataList1" runat="server" Width="100%">
+                                        <ItemTemplate>
+                                            <tr>
+                                                <td height="25" align="center">
+                                                    <a class="0" href="CPZS.aspx?CategoryId=<%# Eval("CategoryId").ToString() %>" >
+                                                        <%# Eval("Name").ToString()%>
+                                                    </a>
+                                                </td>
+                                            </tr>                                           
+                                        </ItemTemplate>
+                                    </asp:DataList> 
+                                                
+                                                
+                                                </td>
+                                        </tr>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <img height="28" src="images/t01.gif" width="190"></td>
+                            </tr>
+                            <tr>
+                                <td width="2%">
+                                    <div align="left">
+                                    </div>
+                                </td>
+                                <td width="100%">
+                                    <br>
+                                    <div onmouseover="try{clearTimeout(timer1)}catch(e){;}" style="overflow: hidden;
+                                        width: 180px; height: 100px" onmouseout="timer1=setInterval('newsScroll()',100)">
+                                        <table class="client" id="news" style="position: relative" cellspacing="0" cellpadding="0"
+                                            width="90%" align="center" border="0" name="news">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="8%" height="25">
+                                                        &nbsp;</td>
+                                                    <td width="100%">
+                                                        <a target="_blank" href="http://www.maticsoft.com/">动软中国</a>
+                                                        <br>
+                                                        <a href='http://bbs.maticsoft.com/' target="_blank">动软社区</a><br>
+                                                        <a href='http://www.litianping.com' target="_blank">天道酬勤</a><br>
+                                                        <a href='http://www.cnblogs.com' target="_blank">博客园</a><br>
+                                                        <a href='http://www.csdn.com' target="_blank">CSDN技术社区</a><br>     
+                                                        <br><br><br><br><br><br><br><br><br>                                                                                                           
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+<SCRIPT language=javascript> 
+    //重复一次新闻内容 
+    document.write(news.tBodies[0].innerHTML) 
+  </SCRIPT>
+                                        </table>
+                                    </div>
+
+                                    <SCRIPT language=javascript> 
+  //实现不间断滚动 
+  function newsScroll() 
+  { 
+    news.style.pixelTop=(news.style.pixelTop-1)%(news.clientHeight/2); 
+  } 
+  timer1=setInterval('newsScroll()',100)  //更改第二个参数可以改变速度，值越小，速度越快。 
+</SCRIPT>
+
+                                    <br>
+                                    <br>
+                                    <br>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td align="middle" width="588" bgcolor="#ffffff" valign="top">
+                     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="778" align="center" border="0">
+        <tbody>
+            <tr>
+                <td background="images/bottom0.gif" height="30">&nbsp;
+                    <font color="#ffffff">京ICP备06044726号
+                        </font>
+                </td>
+                <td background="images/bottom0.gif" height="30">
+                <font color="#ffffff">
+                        动软中国 版权所有 &copy; 2004-2009 </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,81 @@
+BODY {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 23px; FONT-FAMILY: "新宋体"
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #505050; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #ffbc2c; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.1:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.1:visited {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.1:hover {
+	FONT-SIZE: 12px; COLOR: #ffbc2c; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.0:visited {
+	FONT-SIZE: 9pt; COLOR: #505050; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.0:link {
+	FONT-SIZE: 9pt; COLOR: #505050; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.0:visited {
+	FONT-SIZE: 9pt; COLOR: #505050; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.0:hover {
+	FONT-SIZE: 12px; COLOR: #e2002b; FONT-FAMILY: "新宋体"; TEXT-DECORATION: none
+}
+.article {
+	PADDING-LEFT: 8px; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #505050; LINE-HEIGHT: 24px; FONT-FAMILY: "宋体"
+}
+.art_title {
+	FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 26px; FONT-FAMILY: "新宋体"; LETTER-SPACING: 4px; HEIGHT: 25px
+}
+.bg {
+	PADDING-LEFT: 35px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/left1.gif); WIDTH: 190px; COLOR: #666666; PADDING-TOP: 8px; FONT-FAMILY: "宋体"; HEIGHT: 32px
+}
+.input {
+	BORDER-RIGHT: #999999 1px; BORDER-TOP: #999999 1px; BORDER-LEFT: #999999 1px; WIDTH: 90px; BORDER-BOTTOM: #999999 1px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 18px
+}
+.input1 {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; WIDTH: 110px; BORDER-BOTTOM: #999999 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+.bg1 {
+	PADDING-LEFT: 35px; BACKGROUND-IMAGE: url(../images/pan.gif); WIDTH: 190px; COLOR: #000000; PADDING-TOP: 8px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 32px
+}
+.tup {
+	PADDING-LEFT: 30px; PADDING-TOP: 5px
+}
+.zbg {
+	PADDING-LEFT: 30px; BACKGROUND-IMAGE: url(../images/bgt.gif); WIDTH: 208px; PADDING-TOP: 5px; HEIGHT: 160px
+}
+.zbg1 {
+	BACKGROUND-IMAGE: url(../images/bgzp.gif); WIDTH: 510px; HEIGHT: 450px
+}
+.en {
+	PADDING-LEFT: 20px; FONT-SIZE: 12px; PADDING-TOP: 4px; FONT-FAMILY: "Arial"
+}
+.unnamed1 {
+	PADDING-TOP: 4px
+}
+.bg2 {
+	PADDING-LEFT: 35px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/sj3.gif); PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "宋体"; HEIGHT: 35px
+}
+.abg {
+	PADDING-LEFT: 35px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/hh.gif); WIDTH: 190px; PADDING-TOP: 8px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Arial"; HEIGHT: 32px
+}
+.cbg {
+	PADDING-LEFT: 35px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/pan1.gif); WIDTH: 190px; PADDING-TOP: 8px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Arial"; HEIGHT: 32px
+}
+.client {
+	MARGIN-TOP: 5px; FONT-SIZE: 12px; WIDTH: 200px; COLOR: #505050; FONT-FAMILY: "Arial"; HEIGHT: 1000px
+}

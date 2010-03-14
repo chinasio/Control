@@ -1,0 +1,86 @@
+
+CodematicDemoS3 是一个标准三层架构的完整示例项目源码，基于Asp.net2.0开发，结构更简洁，提供更多有效的示例源码参考。方便用户更好的理解和使用该架构进行开发，配合Codematic代码生成器，可以使开发效率事半功倍，倍感轻松。
+
+******************************************************
+
+Codematic_Data.MDF ： 该项目所使用的数据库
+DEncryptTest ：加密解密工具
+
+Lib：公用类库
+BLL: 业务层
+Model: 数据实体
+DAL: 数据层
+Web: 表示层，web项目。
+
+
+登录用户：admin  密码：1
+
+********************************************************************************
+官方网站：http://www.maticsoft.com
+博客园主页：http://ltp.cnblogs.com
+CSDN主页：http://blog.csdn.net/litp
+
+
+ 用智慧改变世界，用创造改变生活。其实，工作也很快乐！— 李天平
+
+********************************************************************************
+*********如果出现：项目打开失败！此安装不支持该项目类型 问题的解决！************
+http://bbs.maticsoft.com/showtopic-3.aspx
+
+
+该项目采用 S2005+SP1 开发。
+如果VS2005是没有打SP1的情况下是只支持Website的方式项目，不支持Web Application Project的。所以，需安装SP1即可。
+
+
+VS2005 SP1下载地址：
+http://download.microsoft.com/download/8/0/7/8071514d-9370-45c3-8af1-4ff09a70e59d/VS80sp1-KB926604-X86-CHS.exe
+
+
+VS2005 SP1号称是M$有史以来最bt的补丁，据说有人装了3个多小时还在收集信息……,为了让大家少走弯路，现总结一下供大家参考。
+
+安装注意事项：
+
+1.安装时间会非常长，如果机器配置不是很高的话需要2个小时，一般的话也需要1个小时左右所以请耐心等待。
+
+2.安装前检查你的c盘是否有大于3G的空余空间，因为安装的时候会释放很多临时文件在c盘，如果不能保证大于3g的话可能会发生异常错误，不过我在安装的时候没有占用3G这么恐怖，不过也起码占用了1G多的空间。
+
+3.如果你以前安装过web application project，在安装vs2005 sp1以前请先把他卸载，不然不能成功安装vs2005 sp1
+4.vs2005sp1的补丁包是把你机器上所有单独装过vs2005的版本的补丁都打上,如果机器上装了Visual Web Developer Express和Visual Studio team sutie,那么他就要运行安装补丁两次.
+
+
+安装步骤：
+
+一．解决数字签名认证的问题
+
+1. 单击 开始单击 运行 ， 键入 控件 secpol.msc , 然后单击 确定 。
+
+2. 双击 本地安全策略。
+
+3. 单击 软件限制策略。
+
+注意 如果列出, 没有软件限制右键单击 软件限制策略 , 然后单击 新建策略 。
+
+4. 在 对象类型 , 双击 强制 。
+
+5. 单击 除本地管理员以外的所有用户 , 并单击 确定 。
+
+6. 重新启动计算机。
+
+要点 之后在执行以上步骤, 本地管理员可安装 .msi 软件包或 .msp 包。 通过以下以前步骤之后安装程序包, 重置强制级别。 在步骤 5, 单击 所有用户 代替 除本地管理员以外的所有用户。
+
+
+二．执行批处理文件来安装
+
+
+reg export HKLM\Software\Policies\Microsoft\Windows\Installer installer.reg
+reg add HKLM\Software\Policies\Microsoft\Windows\Installer /v MaxPatchCacheSize /t REG_DWORD /d 0 /f
+net stop msiserver
+start /wait VS2005sp1-KB926604-X86-CHS.exe
+reg delete HKLM\Software\Policies\Microsoft\Windows\Installer /v MaxPatchCacheSize /f
+reg import installer.reg
+net stop msiserver
+del /q installer.reg 2>nul
+
+注意里面的VS2005sp1-KB926604-X86-CHS.exe  为实际的安装文件名。
+
+

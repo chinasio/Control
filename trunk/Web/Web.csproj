@@ -1,0 +1,1874 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maticsoft.Web</RootNamespace>
+    <AssemblyName>Maticsoft.Web</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="COM.Excel, Version=1.1.1606.17082, Culture=neutral">
+      <HintPath>..\Lib\COM.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral">
+      <HintPath>..\Lib\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox, Version=1.6.3.26073, Culture=neutral">
+      <HintPath>..\Lib\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="LTP.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LtpPageControl, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="OWC10Chart, Version=1.0.2074.16784, Culture=neutral">
+      <HintPath>..\Lib\OWC10Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Accounts\add.aspx" />
+    <Content Include="Admin\Accounts\Admin\editrole.aspx" />
+    <Content Include="Admin\Accounts\Admin\index.aspx" />
+    <Content Include="Admin\Accounts\Admin\permissionadmin.aspx" />
+    <Content Include="Admin\Accounts\Admin\RoleAdmin.aspx" />
+    <Content Include="Admin\Accounts\Admin\roleassignment.aspx" />
+    <Content Include="Admin\Accounts\Admin\UserAdmin.aspx" />
+    <Content Include="Admin\Accounts\images\adminLeftArrow.gif" />
+    <Content Include="Admin\Accounts\images\admin_top_bg.gif" />
+    <Content Include="Admin\Accounts\images\bg.gif" />
+    <Content Include="Admin\Accounts\images\bg1.gif" />
+    <Content Include="Admin\Accounts\images\bg2.gif" />
+    <Content Include="Admin\Accounts\images\bg3.gif" />
+    <Content Include="Admin\Accounts\images\bottombg.gif" />
+    <Content Include="Admin\Accounts\images\btnreview.GIF" />
+    <Content Include="Admin\Accounts\images\button-join.gif" />
+    <Content Include="Admin\Accounts\images\button-login.gif" />
+    <Content Include="Admin\Accounts\images\button_add.gif" />
+    <Content Include="Admin\Accounts\images\button_back.gif" />
+    <Content Include="Admin\Accounts\images\button_cancel.gif" />
+    <Content Include="Admin\Accounts\images\button_close.gif" />
+    <Content Include="Admin\Accounts\images\button_del.gif" />
+    <Content Include="Admin\Accounts\images\button_edit.gif" />
+    <Content Include="Admin\Accounts\images\button_look.gif" />
+    <Content Include="Admin\Accounts\images\button_ok.gif" />
+    <Content Include="Admin\Accounts\images\button_save.gif" />
+    <Content Include="Admin\Accounts\images\button_search.GIF" />
+    <Content Include="Admin\Accounts\images\button_sift.gif" />
+    <Content Include="Admin\Accounts\images\button_update.gif" />
+    <Content Include="Admin\Accounts\images\lan1.gif" />
+    <Content Include="Admin\Accounts\images\lan12.gif" />
+    <Content Include="Admin\Accounts\images\navspacer.gif" />
+    <Content Include="Admin\Accounts\images\skin2\downbg.gif" />
+    <Content Include="Admin\Accounts\images\skin2\topbar_01.jpg" />
+    <Content Include="Admin\Accounts\images\topbg.gif" />
+    <Content Include="Admin\Accounts\setpass.aspx" />
+    <Content Include="Admin\Accounts\style\css.css" />
+    <Content Include="Admin\Accounts\style\style.css" />
+    <Content Include="Admin\Accounts\userinfo.aspx" />
+    <Content Include="Admin\Accounts\usermodify.aspx" />
+    <Content Include="Admin\Accounts\userpass.aspx" />
+    <Content Include="Admin\Accounts\userupdate.aspx" />
+    <Content Include="Admin\Images\273.gif" />
+    <Content Include="Admin\Images\282.gif" />
+    <Content Include="Admin\Images\about16.gif" />
+    <Content Include="Admin\Images\about32.gif" />
+    <Content Include="Admin\Images\add16.gif" />
+    <Content Include="Admin\Images\add32.gif" />
+    <Content Include="Admin\Images\a_te01.gif" />
+    <Content Include="Admin\Images\a_te02.gif" />
+    <Content Include="Admin\Images\b1.gif" />
+    <Content Include="Admin\Images\b11-1.gif" />
+    <Content Include="Admin\Images\b11-2.gif" />
+    <Content Include="Admin\Images\b11.gif" />
+    <Content Include="Admin\Images\b12.gif" />
+    <Content Include="Admin\Images\b13-1.gif" />
+    <Content Include="Admin\Images\b13-2.gif" />
+    <Content Include="Admin\Images\b13.gif" />
+    <Content Include="Admin\Images\b3.gif" />
+    <Content Include="Admin\Images\b4.gif" />
+    <Content Include="Admin\Images\b5.gif" />
+    <Content Include="Admin\Images\bar_00.gif" />
+    <Content Include="Admin\Images\bar_01.gif" />
+    <Content Include="Admin\Images\bar_02.gif" />
+    <Content Include="Admin\Images\bar_03.gif" />
+    <Content Include="Admin\Images\bar_04.gif" />
+    <Content Include="Admin\Images\bar_05.gif" />
+    <Content Include="Admin\Images\bar_06.gif" />
+    <Content Include="Admin\Images\bar_07.gif" />
+    <Content Include="Admin\Images\bar_08.gif" />
+    <Content Include="Admin\Images\bar_09.gif" />
+    <Content Include="Admin\Images\bar_10.gif" />
+    <Content Include="Admin\Images\bbs16.gif" />
+    <Content Include="Admin\Images\bbs32.gif" />
+    <Content Include="Admin\Images\bg.gif" />
+    <Content Include="Admin\Images\bgx.GIF" />
+    <Content Include="Admin\Images\bg_01.gif" />
+    <Content Include="Admin\Images\bg_02.gif" />
+    <Content Include="Admin\Images\bg_03.gif" />
+    <Content Include="Admin\Images\blank.gif" />
+    <Content Include="Admin\Images\bottom_01.gif" />
+    <Content Include="Admin\Images\bottom_02.gif" />
+    <Content Include="Admin\Images\bottom_03.gif" />
+    <Content Include="Admin\Images\Briefcase16.gif" />
+    <Content Include="Admin\Images\Briefcase32.gif" />
+    <Content Include="Admin\Images\button_edit.gif" />
+    <Content Include="Admin\Images\button_search.GIF" />
+    <Content Include="Admin\Images\c6.gif" />
+    <Content Include="Admin\Images\card16.gif" />
+    <Content Include="Admin\Images\card32.gif" />
+    <Content Include="Admin\Images\company16.gif" />
+    <Content Include="Admin\Images\company32.gif" />
+    <Content Include="Admin\Images\css.css" />
+    <Content Include="Admin\Images\d2.gif" />
+    <Content Include="Admin\Images\d3.gif" />
+    <Content Include="Admin\Images\dbsx_01.gif" />
+    <Content Include="Admin\Images\dbsx_02.gif" />
+    <Content Include="Admin\Images\desktitle.gif" />
+    <Content Include="Admin\Images\desktop16.gif" />
+    <Content Include="Admin\Images\desktop32.gif" />
+    <Content Include="Admin\Images\desktop_01.gif" />
+    <Content Include="Admin\Images\desktop_02.gif" />
+    <Content Include="Admin\Images\desktop_03.gif" />
+    <Content Include="Admin\Images\dsj16.gif" />
+    <Content Include="Admin\Images\dsj32.gif" />
+    <Content Include="Admin\Images\f3.gif" />
+    <Content Include="Admin\Images\f4.gif" />
+    <Content Include="Admin\Images\find16.gif" />
+    <Content Include="Admin\Images\find32.gif" />
+    <Content Include="Admin\Images\firstpage_01.gif" />
+    <Content Include="Admin\Images\firstpage_02.gif" />
+    <Content Include="Admin\Images\firstpage_03.gif" />
+    <Content Include="Admin\Images\folder16.gif" />
+    <Content Include="Admin\Images\folder32.gif" />
+    <Content Include="Admin\Images\foldergreen_16.gif" />
+    <Content Include="Admin\Images\ftb\folder.big.gif" />
+    <Content Include="Admin\Images\ftb\folder.small.gif" />
+    <Content Include="Admin\Images\ftb\folder.up.gif" />
+    <Content Include="Admin\Images\ftb\office2000\bold.gif" />
+    <Content Include="Admin\Images\ftb\office2000\bullets.gif" />
+    <Content Include="Admin\Images\ftb\office2000\center.gif" />
+    <Content Include="Admin\Images\ftb\office2000\copy.gif" />
+    <Content Include="Admin\Images\ftb\office2000\createlink.gif" />
+    <Content Include="Admin\Images\ftb\office2000\cut.gif" />
+    <Content Include="Admin\Images\ftb\office2000\deletetablecolumn.gif" />
+    <Content Include="Admin\Images\ftb\office2000\deletetablerow.gif" />
+    <Content Include="Admin\Images\ftb\office2000\fontbackcolorpicker.gif" />
+    <Content Include="Admin\Images\ftb\office2000\fontforecolorpicker.gif" />
+    <Content Include="Admin\Images\ftb\office2000\indent.gif" />
+    <Content Include="Admin\Images\ftb\office2000\insertdate.gif" />
+    <Content Include="Admin\Images\ftb\office2000\insertimage.gif" />
+    <Content Include="Admin\Images\ftb\office2000\insertimagefromgallery.gif" />
+    <Content Include="Admin\Images\ftb\office2000\insertrule.gif" />
+    <Content Include="Admin\Images\ftb\office2000\inserttable.gif" />
+    <Content Include="Admin\Images\ftb\office2000\inserttablecolumn.gif" />
+    <Content Include="Admin\Images\ftb\office2000\inserttablerow.gif" />
+    <Content Include="Admin\Images\ftb\office2000\inserttime.gif" />
+    <Content Include="Admin\Images\ftb\office2000\italic.gif" />
+    <Content Include="Admin\Images\ftb\office2000\justifycenter.gif" />
+    <Content Include="Admin\Images\ftb\office2000\justifyfull.gif" />
+    <Content Include="Admin\Images\ftb\office2000\justifyleft.gif" />
+    <Content Include="Admin\Images\ftb\office2000\justifyright.gif" />
+    <Content Include="Admin\Images\ftb\office2000\link.gif" />
+    <Content Include="Admin\Images\ftb\office2000\mode.design.gif" />
+    <Content Include="Admin\Images\ftb\office2000\mode.html.gif" />
+    <Content Include="Admin\Images\ftb\office2000\numberedlist.gif" />
+    <Content Include="Admin\Images\ftb\office2000\numbers.gif" />
+    <Content Include="Admin\Images\ftb\office2000\outdent.gif" />
+    <Content Include="Admin\Images\ftb\office2000\paste.gif" />
+    <Content Include="Admin\Images\ftb\office2000\print.gif" />
+    <Content Include="Admin\Images\ftb\office2000\redo.gif" />
+    <Content Include="Admin\Images\ftb\office2000\removeformat.gif" />
+    <Content Include="Admin\Images\ftb\office2000\save.gif" />
+    <Content Include="Admin\Images\ftb\office2000\separator.gif" />
+    <Content Include="Admin\Images\ftb\office2000\spellcheck.gif" />
+    <Content Include="Admin\Images\ftb\office2000\strikethrough.gif" />
+    <Content Include="Admin\Images\ftb\office2000\subscript.gif" />
+    <Content Include="Admin\Images\ftb\office2000\superscript.gif" />
+    <Content Include="Admin\Images\ftb\office2000\table.gif" />
+    <Content Include="Admin\Images\ftb\office2000\toolbar.end.gif" />
+    <Content Include="Admin\Images\ftb\office2000\toolbar.gif" />
+    <Content Include="Admin\Images\ftb\office2000\toolbar.start.gif" />
+    <Content Include="Admin\Images\ftb\office2000\underline.gif" />
+    <Content Include="Admin\Images\ftb\office2000\undo.gif" />
+    <Content Include="Admin\Images\ftb\office2000\unlink.gif" />
+    <Content Include="Admin\Images\ftb\office2000\wordclean.gif" />
+    <Content Include="Admin\Images\ftb\office2000\wordcount.gif" />
+    <Content Include="Admin\Images\ftb\office2003\bold.gif" />
+    <Content Include="Admin\Images\ftb\office2003\bullets.gif" />
+    <Content Include="Admin\Images\ftb\office2003\copy.gif" />
+    <Content Include="Admin\Images\ftb\office2003\createlink.gif" />
+    <Content Include="Admin\Images\ftb\office2003\cut.gif" />
+    <Content Include="Admin\Images\ftb\office2003\delete.gif" />
+    <Content Include="Admin\Images\ftb\office2003\deletetablecolumn.gif" />
+    <Content Include="Admin\Images\ftb\office2003\deletetablerow.gif" />
+    <Content Include="Admin\Images\ftb\office2003\fontbackcolorpicker.gif" />
+    <Content Include="Admin\Images\ftb\office2003\fontforecolorpicker.gif" />
+    <Content Include="Admin\Images\ftb\office2003\indent.gif" />
+    <Content Include="Admin\Images\ftb\office2003\insertdate.gif" />
+    <Content Include="Admin\Images\ftb\office2003\insertimage.gif" />
+    <Content Include="Admin\Images\ftb\office2003\insertimagefromgallery.gif" />
+    <Content Include="Admin\Images\ftb\office2003\insertrule.gif" />
+    <Content Include="Admin\Images\ftb\office2003\inserttable.gif" />
+    <Content Include="Admin\Images\ftb\office2003\inserttablecolumn.gif" />
+    <Content Include="Admin\Images\ftb\office2003\inserttablerow.gif" />
+    <Content Include="Admin\Images\ftb\office2003\inserttime.gif" />
+    <Content Include="Admin\Images\ftb\office2003\italic.gif" />
+    <Content Include="Admin\Images\ftb\office2003\justifycenter.gif" />
+    <Content Include="Admin\Images\ftb\office2003\justifyfull.gif" />
+    <Content Include="Admin\Images\ftb\office2003\justifyleft.gif" />
+    <Content Include="Admin\Images\ftb\office2003\justifyright.gif" />
+    <Content Include="Admin\Images\ftb\office2003\mode.design.gif" />
+    <Content Include="Admin\Images\ftb\office2003\mode.html.gif" />
+    <Content Include="Admin\Images\ftb\office2003\numberedlist.gif" />
+    <Content Include="Admin\Images\ftb\office2003\outdent.gif" />
+    <Content Include="Admin\Images\ftb\office2003\paste.gif" />
+    <Content Include="Admin\Images\ftb\office2003\print.gif" />
+    <Content Include="Admin\Images\ftb\office2003\redo.gif" />
+    <Content Include="Admin\Images\ftb\office2003\removeformat.gif" />
+    <Content Include="Admin\Images\ftb\office2003\save.gif" />
+    <Content Include="Admin\Images\ftb\office2003\separator.gif" />
+    <Content Include="Admin\Images\ftb\office2003\spellcheck.gif" />
+    <Content Include="Admin\Images\ftb\office2003\strikethrough.gif" />
+    <Content Include="Admin\Images\ftb\office2003\subscript.gif" />
+    <Content Include="Admin\Images\ftb\office2003\superscript.gif" />
+    <Content Include="Admin\Images\ftb\office2003\toolbar.background.gif" />
+    <Content Include="Admin\Images\ftb\office2003\toolbar.end.gif" />
+    <Content Include="Admin\Images\ftb\office2003\toolbar.start.gif" />
+    <Content Include="Admin\Images\ftb\office2003\toolbarbutton.down.gif" />
+    <Content Include="Admin\Images\ftb\office2003\toolbarbutton.over.gif" />
+    <Content Include="Admin\Images\ftb\office2003\underline.gif" />
+    <Content Include="Admin\Images\ftb\office2003\undo.gif" />
+    <Content Include="Admin\Images\ftb\office2003\unlink.gif" />
+    <Content Include="Admin\Images\ftb\office2003\wordclean.gif" />
+    <Content Include="Admin\Images\ftb\office2003\wordcount.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\bgcolor.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\bold.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\bold.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\borders.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\bullets.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\bullets.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\changecase.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\changecase.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\copy.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\copy.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\createlink.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\createlink.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\cut.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\cut.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\delete.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\delete.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\deletetablecolumn.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\deletetablecolumn.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\deletetablerow.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\deletetablerow.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\details.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\find.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\find.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\fontbackcolorpicker.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\fontbackcolorpicker.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\fontforecolorpicker.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\fontforecolorpicker.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\help.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\help.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\indent.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\indent.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertdate.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertdate.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertemail.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertemail.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertimage.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertimage.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertimagefromgallery.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertimagefromgallery.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertrule.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\insertrule.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttable.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttable.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttablecolumn.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttablecolumn.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttablerow.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttablerow.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttime.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\inserttime.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\italic.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\italic.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifycenter.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifycenter.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifyfull.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifyfull.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifyleft.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifyleft.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifyright.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\justifyright.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\mode.design.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\mode.html.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\numberedlist.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\numberedlist.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\outdent.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\outdent.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\paste.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\paste.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\print.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\print.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\redo.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\redo.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\removeformat.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\removeformat.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\save.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\save.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\separator.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\spellcheck.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\spellcheck.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\strikethrough.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\strikethrough.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\subscript.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\subscript.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\superscript.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\superscript.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\toggleborders.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\toggledetails.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\toggledetails.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\toolbar.end.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\toolbar.start.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\underline.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\underline.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\undo.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\undo.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\unlink.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\unlink.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\verse.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\verse.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\wordclean.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\wordclean.over.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\wordcount.gif" />
+    <Content Include="Admin\Images\ftb\officeXP\wordcount.over.gif" />
+    <Content Include="Admin\Images\ger16.gif" />
+    <Content Include="Admin\Images\ger32.gif" />
+    <Content Include="Admin\Images\gongg16.gif" />
+    <Content Include="Admin\Images\gongg32.gif" />
+    <Content Include="Admin\Images\gongzkp16.gif" />
+    <Content Include="Admin\Images\gongzkp32.gif" />
+    <Content Include="Admin\Images\help16.gif" />
+    <Content Include="Admin\Images\help32.gif" />
+    <Content Include="Admin\Images\image.gif" />
+    <Content Include="Admin\Images\index.js" />
+    <Content Include="Admin\Images\in_bg.gif" />
+    <Content Include="Admin\Images\left-1-1.gif" />
+    <Content Include="Admin\Images\left-1-2.gif" />
+    <Content Include="Admin\Images\left-1-3.gif" />
+    <Content Include="Admin\Images\left-1.gif" />
+    <Content Include="Admin\Images\left-2-1.gif" />
+    <Content Include="Admin\Images\left-2-2.gif" />
+    <Content Include="Admin\Images\left-2-3.gif" />
+    <Content Include="Admin\Images\left-2.gif" />
+    <Content Include="Admin\Images\left-3-1.gif" />
+    <Content Include="Admin\Images\left-3-2.gif" />
+    <Content Include="Admin\Images\left-3-3.gif" />
+    <Content Include="Admin\Images\left-3.gif" />
+    <Content Include="Admin\Images\left-bj-1.gif" />
+    <Content Include="Admin\Images\left-bj-2.gif" />
+    <Content Include="Admin\Images\left-bj-3.gif" />
+    <Content Include="Admin\Images\left-bj.gif" />
+    <Content Include="Admin\Images\Loading.gif" />
+    <Content Include="Admin\Images\login.css" />
+    <Content Include="Admin\Images\login_p_img02.gif" />
+    <Content Include="Admin\Images\login_p_img03.gif" />
+    <Content Include="Admin\Images\login_p_img04.gif" />
+    <Content Include="Admin\Images\login_p_img05.gif" />
+    <Content Include="Admin\Images\login_p_img06.gif" />
+    <Content Include="Admin\Images\login_p_img07.gif" />
+    <Content Include="Admin\Images\login_p_img11.gif" />
+    <Content Include="Admin\Images\login_p_img12.gif" />
+    <Content Include="Admin\Images\mag16.gif" />
+    <Content Include="Admin\Images\mag32.gif" />
+    <Content Include="Admin\Images\mail16.gif" />
+    <Content Include="Admin\Images\mail32.gif" />
+    <Content Include="Admin\Images\main_01.gif" />
+    <Content Include="Admin\Images\main_04.gif" />
+    <Content Include="Admin\Images\main_05.gif" />
+    <Content Include="Admin\Images\main_06.gif" />
+    <Content Include="Admin\Images\main_08.gif" />
+    <Content Include="Admin\Images\main_09.gif" />
+    <Content Include="Admin\Images\member_t04.JPG" />
+    <Content Include="Admin\Images\MenuImg\1.gif" />
+    <Content Include="Admin\Images\MenuImg\2.gif" />
+    <Content Include="Admin\Images\MenuImg\288.GIF" />
+    <Content Include="Admin\Images\MenuImg\about16.gif" />
+    <Content Include="Admin\Images\MenuImg\bbs16.gif" />
+    <Content Include="Admin\Images\MenuImg\Briefcase16.gif" />
+    <Content Include="Admin\Images\MenuImg\find16.gif" />
+    <Content Include="Admin\Images\MenuImg\folder16.gif" />
+    <Content Include="Admin\Images\MenuImg\foldergreen_16.gif" />
+    <Content Include="Admin\Images\MenuImg\ger16.gif" />
+    <Content Include="Admin\Images\MenuImg\help16.gif" />
+    <Content Include="Admin\Images\MenuImg\news16.gif" />
+    <Content Include="Admin\Images\MenuImg\out16.gif" />
+    <Content Include="Admin\Images\MenuImg\Programs16.gif" />
+    <Content Include="Admin\Images\MenuImg\quanx16.gif" />
+    <Content Include="Admin\Images\MenuImg\thumbnails.gif" />
+    <Content Include="Admin\Images\MenuImg\times.gif" />
+    <Content Include="Admin\Images\MenuImg\ts16.gif" />
+    <Content Include="Admin\Images\MenuImg\user16.gif" />
+    <Content Include="Admin\Images\MenuImg\vote16.gif" />
+    <Content Include="Admin\Images\MenuImg\xinx16.gif" />
+    <Content Include="Admin\Images\MenuImg\zhut16.gif" />
+    <Content Include="Admin\Images\MenuImg\zjsp16.gif" />
+    <Content Include="Admin\Images\message16.gif" />
+    <Content Include="Admin\Images\message32.gif" />
+    <Content Include="Admin\Images\module16.gif" />
+    <Content Include="Admin\Images\module32.gif" />
+    <Content Include="Admin\Images\more1.gif" />
+    <Content Include="Admin\Images\myfile16.gif" />
+    <Content Include="Admin\Images\myfile32.gif" />
+    <Content Include="Admin\Images\news.gif" />
+    <Content Include="Admin\Images\news16.gif" />
+    <Content Include="Admin\Images\news32.gif" />
+    <Content Include="Admin\Images\onecard16.gif" />
+    <Content Include="Admin\Images\onecard32.gif" />
+    <Content Include="Admin\Images\out16.gif" />
+    <Content Include="Admin\Images\out32.gif" />
+    <Content Include="Admin\Images\plan16.gif" />
+    <Content Include="Admin\Images\plan32.gif" />
+    <Content Include="Admin\Images\point07.gif" />
+    <Content Include="Admin\Images\PRINTER.GIF" />
+    <Content Include="Admin\Images\Programs16.gif" />
+    <Content Include="Admin\Images\Programs32.gif" />
+    <Content Include="Admin\Images\quanx16.gif" />
+    <Content Include="Admin\Images\quanx32.gif" />
+    <Content Include="Admin\Images\right-1.gif" />
+    <Content Include="Admin\Images\right-2.gif" />
+    <Content Include="Admin\Images\right-3.gif" />
+    <Content Include="Admin\Images\right-bj-1.gif" />
+    <Content Include="Admin\Images\right-bj-2.gif" />
+    <Content Include="Admin\Images\right-bj-3.gif" />
+    <Content Include="Admin\Images\right-bj.gif" />
+    <Content Include="Admin\Images\right.gif" />
+    <Content Include="Admin\Images\script.GIF" />
+    <Content Include="Admin\Images\SearchBtn.gif" />
+    <Content Include="Admin\Images\spacer.gif" />
+    <Content Include="Admin\Images\style.css" />
+    <Content Include="Admin\Images\tel16.gif" />
+    <Content Include="Admin\Images\tel32.gif" />
+    <Content Include="Admin\Images\top-1-1.gif" />
+    <Content Include="Admin\Images\top-1-2.gif" />
+    <Content Include="Admin\Images\top-1-3.gif" />
+    <Content Include="Admin\Images\top-1.gif" />
+    <Content Include="Admin\Images\top-2-1.gif" />
+    <Content Include="Admin\Images\top-2-2.gif" />
+    <Content Include="Admin\Images\top-2-3.gif" />
+    <Content Include="Admin\Images\top-2.gif" />
+    <Content Include="Admin\Images\top-3-1.gif" />
+    <Content Include="Admin\Images\top-3-2.gif" />
+    <Content Include="Admin\Images\top-3-3.gif" />
+    <Content Include="Admin\Images\top-3.gif" />
+    <Content Include="Admin\Images\top-4-1.gif" />
+    <Content Include="Admin\Images\top-4-2.gif" />
+    <Content Include="Admin\Images\top-4-3.gif" />
+    <Content Include="Admin\Images\top-4.gif" />
+    <Content Include="Admin\Images\top-5-1.gif" />
+    <Content Include="Admin\Images\top-5-2.gif" />
+    <Content Include="Admin\Images\top-5-3.gif" />
+    <Content Include="Admin\Images\top-5.gif" />
+    <Content Include="Admin\Images\top-bj-1.gif" />
+    <Content Include="Admin\Images\top-bj-2.gif" />
+    <Content Include="Admin\Images\top-bj-3.gif" />
+    <Content Include="Admin\Images\top-bj.gif" />
+    <Content Include="Admin\Images\topbar_01.jpg" />
+    <Content Include="Admin\Images\topbar_02.jpg" />
+    <Content Include="Admin\Images\topbar_03.jpg" />
+    <Content Include="Admin\Images\ts.gif" />
+    <Content Include="Admin\Images\ts16.gif" />
+    <Content Include="Admin\Images\ts32.gif" />
+    <Content Include="Admin\Images\tubiao.gif" />
+    <Content Include="Admin\Images\tubiao_01.GIF" />
+    <Content Include="Admin\Images\tubiao_02.gif" />
+    <Content Include="Admin\Images\user16.gif" />
+    <Content Include="Admin\Images\user32.gif" />
+    <Content Include="Admin\Images\vote16.gif" />
+    <Content Include="Admin\Images\x16.gif" />
+    <Content Include="Admin\Images\x32.gif" />
+    <Content Include="Admin\Images\xinx16.gif" />
+    <Content Include="Admin\Images\xinx32.gif" />
+    <Content Include="Admin\Images\yw16.gif" />
+    <Content Include="Admin\Images\yw32.gif" />
+    <Content Include="Admin\Images\zhut16.gif" />
+    <Content Include="Admin\Images\zhut32.gif" />
+    <Content Include="Admin\Images\zjsp16.gif" />
+    <Content Include="Admin\Images\zjsp32.gif" />
+    <Content Include="Admin\Left.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Logout.aspx" />
+    <Content Include="Admin\Main.aspx" />
+    <Content Include="Admin\Main.htm" />
+    <Content Include="Admin\NewsClassManage\Add.aspx" />
+    <Content Include="Admin\NewsClassManage\AllList.aspx" />
+    <Content Include="Admin\NewsClassManage\Delete.aspx" />
+    <Content Include="Admin\NewsClassManage\Index.aspx" />
+    <Content Include="Admin\NewsClassManage\Modify.aspx" />
+    <Content Include="Admin\NewsClassManage\Search.aspx" />
+    <Content Include="Admin\NewsClassManage\Show.aspx" />
+    <Content Include="Admin\NewsManage\Add.aspx" />
+    <Content Include="Admin\NewsManage\AllList.aspx" />
+    <Content Include="Admin\NewsManage\CheckBox.js" />
+    <Content Include="Admin\NewsManage\Delete.aspx" />
+    <Content Include="Admin\NewsManage\HelperScripts\ftb.colorpicker.aspx" />
+    <Content Include="Admin\NewsManage\HelperScripts\ftb.imagegallery.aspx" />
+    <Content Include="Admin\NewsManage\HelperScripts\ftb.inserttable.aspx" />
+    <Content Include="Admin\NewsManage\images\ftb\folder.big.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\folder.small.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\folder.up.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\bold.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\bullets.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\center.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\copy.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\createlink.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\cut.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\deletetablecolumn.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\deletetablerow.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\fontbackcolorpicker.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\fontforecolorpicker.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\indent.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\insertdate.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\insertimage.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\insertimagefromgallery.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\insertrule.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\inserttable.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\inserttablecolumn.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\inserttablerow.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\inserttime.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\italic.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\justifycenter.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\justifyfull.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\justifyleft.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\justifyright.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\link.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\mode.design.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\mode.html.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\numberedlist.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\numbers.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\outdent.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\paste.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\print.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\redo.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\removeformat.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\save.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\separator.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\spellcheck.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\strikethrough.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\subscript.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\superscript.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\table.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\toolbar.end.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\toolbar.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\toolbar.start.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\underline.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\undo.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\unlink.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\wordclean.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2000\wordcount.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\bold.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\bullets.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\copy.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\createlink.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\cut.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\delete.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\deletetablecolumn.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\deletetablerow.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\fontbackcolorpicker.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\fontforecolorpicker.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\indent.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\insertdate.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\insertimage.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\insertimagefromgallery.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\insertrule.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\inserttable.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\inserttablecolumn.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\inserttablerow.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\inserttime.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\italic.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\justifycenter.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\justifyfull.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\justifyleft.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\justifyright.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\mode.design.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\mode.html.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\numberedlist.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\outdent.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\paste.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\print.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\redo.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\removeformat.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\save.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\separator.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\spellcheck.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\strikethrough.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\subscript.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\superscript.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\toolbar.background.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\toolbar.end.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\toolbar.start.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\toolbarbutton.down.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\toolbarbutton.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\underline.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\undo.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\unlink.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\wordclean.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\office2003\wordcount.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\bgcolor.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\bold.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\bold.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\borders.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\bullets.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\bullets.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\changecase.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\changecase.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\copy.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\copy.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\createlink.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\createlink.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\cut.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\cut.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\delete.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\delete.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\deletetablecolumn.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\deletetablecolumn.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\deletetablerow.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\deletetablerow.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\details.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\find.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\find.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\fontbackcolorpicker.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\fontbackcolorpicker.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\fontforecolorpicker.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\fontforecolorpicker.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\help.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\help.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\indent.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\indent.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertdate.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertdate.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertemail.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertemail.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertimage.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertimage.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertimagefromgallery.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertimagefromgallery.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertrule.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\insertrule.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttable.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttable.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttablecolumn.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttablecolumn.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttablerow.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttablerow.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttime.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\inserttime.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\italic.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\italic.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifycenter.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifycenter.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifyfull.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifyfull.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifyleft.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifyleft.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifyright.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\justifyright.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\mode.design.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\mode.html.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\numberedlist.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\numberedlist.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\outdent.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\outdent.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\paste.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\paste.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\print.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\print.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\redo.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\redo.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\removeformat.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\removeformat.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\save.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\save.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\separator.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\spellcheck.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\spellcheck.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\strikethrough.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\strikethrough.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\subscript.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\subscript.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\superscript.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\superscript.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\toggleborders.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\toggledetails.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\toggledetails.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\toolbar.end.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\toolbar.start.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\underline.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\underline.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\undo.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\undo.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\unlink.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\unlink.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\verse.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\verse.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\wordclean.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\wordclean.over.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\wordcount.gif" />
+    <Content Include="Admin\NewsManage\images\ftb\officeXP\wordcount.over.gif" />
+    <Content Include="Admin\NewsManage\Index.aspx" />
+    <Content Include="Admin\NewsManage\Modify.aspx" />
+    <Content Include="Admin\NewsManage\Modify2.aspx" />
+    <Content Include="Admin\NewsManage\Release.aspx" />
+    <Content Include="Admin\NewsManage\Show.aspx" />
+    <Content Include="Admin\PBrand\Add.aspx" />
+    <Content Include="Admin\PBrand\AllList.aspx" />
+    <Content Include="Admin\PBrand\Index.aspx" />
+    <Content Include="Admin\PBrand\Modify.aspx" />
+    <Content Include="Admin\PCategory\Add.aspx" />
+    <Content Include="Admin\PCategory\AllList.aspx" />
+    <Content Include="Admin\PCategory\Index.aspx" />
+    <Content Include="Admin\PCategory\Modify.aspx" />
+    <Content Include="Admin\Product\Add.aspx" />
+    <Content Include="Admin\Product\AllList.aspx" />
+    <Content Include="Admin\Product\HelperScripts\ftb.colorpicker.aspx" />
+    <Content Include="Admin\Product\HelperScripts\ftb.imagegallery.aspx" />
+    <Content Include="Admin\Product\HelperScripts\ftb.inserttable.aspx" />
+    <Content Include="Admin\Product\images\ftb\folder.big.gif" />
+    <Content Include="Admin\Product\images\ftb\folder.small.gif" />
+    <Content Include="Admin\Product\images\ftb\folder.up.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\bold.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\bullets.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\center.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\copy.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\createlink.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\cut.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\deletetablecolumn.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\deletetablerow.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\fontbackcolorpicker.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\fontforecolorpicker.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\indent.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\insertdate.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\insertimage.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\insertimagefromgallery.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\insertrule.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\inserttable.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\inserttablecolumn.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\inserttablerow.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\inserttime.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\italic.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\justifycenter.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\justifyfull.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\justifyleft.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\justifyright.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\link.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\mode.design.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\mode.html.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\numberedlist.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\numbers.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\outdent.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\paste.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\print.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\redo.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\removeformat.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\save.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\separator.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\spellcheck.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\strikethrough.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\subscript.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\superscript.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\table.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\toolbar.end.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\toolbar.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\toolbar.start.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\underline.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\undo.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\unlink.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\wordclean.gif" />
+    <Content Include="Admin\Product\images\ftb\office2000\wordcount.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\bold.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\bullets.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\copy.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\createlink.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\cut.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\delete.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\deletetablecolumn.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\deletetablerow.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\fontbackcolorpicker.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\fontforecolorpicker.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\indent.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\insertdate.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\insertimage.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\insertimagefromgallery.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\insertrule.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\inserttable.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\inserttablecolumn.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\inserttablerow.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\inserttime.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\italic.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\justifycenter.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\justifyfull.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\justifyleft.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\justifyright.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\mode.design.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\mode.html.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\numberedlist.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\outdent.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\paste.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\print.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\redo.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\removeformat.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\save.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\separator.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\spellcheck.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\strikethrough.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\subscript.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\superscript.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\toolbar.background.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\toolbar.end.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\toolbar.start.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\toolbarbutton.down.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\toolbarbutton.over.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\underline.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\undo.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\unlink.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\wordclean.gif" />
+    <Content Include="Admin\Product\images\ftb\office2003\wordcount.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\bgcolor.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\bold.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\bold.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\borders.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\bullets.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\bullets.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\changecase.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\changecase.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\copy.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\copy.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\createlink.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\createlink.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\cut.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\cut.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\delete.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\delete.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\deletetablecolumn.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\deletetablecolumn.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\deletetablerow.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\deletetablerow.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\details.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\find.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\find.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\fontbackcolorpicker.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\fontbackcolorpicker.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\fontforecolorpicker.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\fontforecolorpicker.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\help.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\help.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\indent.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\indent.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertdate.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertdate.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertemail.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertemail.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertimage.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertimage.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertimagefromgallery.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertimagefromgallery.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertrule.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\insertrule.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttable.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttable.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttablecolumn.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttablecolumn.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttablerow.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttablerow.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttime.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\inserttime.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\italic.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\italic.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifycenter.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifycenter.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifyfull.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifyfull.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifyleft.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifyleft.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifyright.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\justifyright.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\mode.design.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\mode.html.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\numberedlist.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\numberedlist.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\outdent.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\outdent.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\paste.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\paste.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\print.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\print.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\redo.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\redo.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\removeformat.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\removeformat.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\save.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\save.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\separator.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\spellcheck.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\spellcheck.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\strikethrough.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\strikethrough.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\subscript.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\subscript.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\superscript.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\superscript.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\toggleborders.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\toggledetails.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\toggledetails.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\toolbar.end.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\toolbar.start.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\underline.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\underline.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\undo.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\undo.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\unlink.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\unlink.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\verse.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\verse.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\wordclean.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\wordclean.over.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\wordcount.gif" />
+    <Content Include="Admin\Product\images\ftb\officeXP\wordcount.over.gif" />
+    <Content Include="Admin\Product\Index.aspx" />
+    <Content Include="Admin\Product\Modify.aspx" />
+    <Content Include="Admin\Product\Show.aspx" />
+    <Content Include="Admin\Relogin.aspx" />
+    <Content Include="Admin\ShowCallBoard.aspx" />
+    <Content Include="Admin\Spliter.aspx" />
+    <Content Include="Admin\Style.css" />
+    <Content Include="Admin\SysManage\add.aspx" />
+    <Content Include="Admin\SysManage\CheckBox.js" />
+    <Content Include="Admin\SysManage\delete.aspx" />
+    <Content Include="Admin\SysManage\logindex.aspx" />
+    <Content Include="Admin\SysManage\logshow.aspx" />
+    <Content Include="Admin\SysManage\makesql.aspx" />
+    <Content Include="Admin\SysManage\modify.aspx" />
+    <Content Include="Admin\SysManage\search.aspx" />
+    <Content Include="Admin\SysManage\show.aspx" />
+    <Content Include="Admin\SysManage\treelist.aspx" />
+    <Content Include="Admin\toindex.aspx" />
+    <Content Include="Admin\Top.aspx" />
+    <Content Include="Controls\checkright.ascx" />
+    <Content Include="Controls\copyright.ascx" />
+    <Content Include="CPZS.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorMsg.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="GSJJ.aspx" />
+    <Content Include="GSRY.aspx" />
+    <Content Include="GSXW.aspx" />
+    <Content Include="Images\banner001.jpg" />
+    <Content Include="Images\bj.gif" />
+    <Content Include="Images\cpzs.gif" />
+    <Content Include="Images\cpzs1.gif" />
+    <Content Include="Images\css.css" />
+    <Content Include="Images\ct.gif" />
+    <Content Include="Images\dl.gif" />
+    <Content Include="Images\go1.gif" />
+    <Content Include="Images\gsjj.gif" />
+    <Content Include="Images\gsry.gif" />
+    <Content Include="Images\gsxw.gif" />
+    <Content Include="Images\left6.gif" />
+    <Content Include="Images\left61.gif" />
+    <Content Include="Images\lxwm.gif" />
+    <Content Include="Images\more.gif" />
+    <Content Include="Images\news.gif" />
+    <Content Include="Images\shouye_r1_c2.gif" />
+    <Content Include="Images\shouye_r2_c2.gif" />
+    <Content Include="Images\shouye_r4_c2.gif" />
+    <Content Include="Images\shouye_r8_c2.gif" />
+    <Content Include="Images\shouye_r8_c4.gif" />
+    <Content Include="Images\t00.gif" />
+    <Content Include="Images\t01.gif" />
+    <Content Include="Images\t02.gif" />
+    <Content Include="Images\top1.gif" />
+    <Content Include="Images\top2.gif" />
+    <Content Include="Images\topbg.gif" />
+    <Content Include="Images\topc2.gif" />
+    <Content Include="Images\topc29.gif" />
+    <Content Include="js\1.gif" />
+    <Content Include="js\2.gif" />
+    <Content Include="js\3.gif" />
+    <Content Include="js\4.gif" />
+    <Content Include="js\calendar.js" />
+    <Content Include="js\Calendar2.js" />
+    <Content Include="js\css.css" />
+    <Content Include="js\date.gif" />
+    <Content Include="js\date.js" />
+    <Content Include="js\imgbtn_Date.jpg" />
+    <Content Include="LXWM.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="ProductImages\1.jpg" />
+    <Content Include="ProductImages\10.jpg" />
+    <Content Include="ProductImages\11.jpg" />
+    <Content Include="ProductImages\12.jpg" />
+    <Content Include="ProductImages\13.jpg" />
+    <Content Include="ProductImages\14.jpg" />
+    <Content Include="ProductImages\15.JPG" />
+    <Content Include="ProductImages\16.jpg" />
+    <Content Include="ProductImages\17.jpg" />
+    <Content Include="ProductImages\18.jpg" />
+    <Content Include="ProductImages\19.jpg" />
+    <Content Include="ProductImages\2.jpg" />
+    <Content Include="ProductImages\20070522214943DSC01545.JPG" />
+    <Content Include="ProductImages\20070523223750200642521174434246.jpg" />
+    <Content Include="ProductImages\20070524220009DK-1.JPG" />
+    <Content Include="ProductImages\3.jpg" />
+    <Content Include="ProductImages\4.jpg" />
+    <Content Include="ProductImages\5.jpg" />
+    <Content Include="ProductImages\6.jpg" />
+    <Content Include="ProductImages\7.jpg" />
+    <Content Include="ProductImages\8.jpg" />
+    <Content Include="ProductImages\9.jpg" />
+    <Content Include="Style.css" />
+    <Content Include="ValidateCode.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="webctrl_client\1_0\Images\folder.gif" />
+    <Content Include="webctrl_client\1_0\Images\folderopen.gif" />
+    <Content Include="webctrl_client\1_0\Images\html.gif" />
+    <Content Include="webctrl_client\1_0\Images\root.gif" />
+    <Content Include="webctrl_client\1_0\MultiPage.htc" />
+    <Content Include="webctrl_client\1_0\TabStrip.htc" />
+    <Content Include="webctrl_client\1_0\toolbar.htc" />
+    <Content Include="webctrl_client\1_0\TreeImages\f.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\fminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\fplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\i.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\L.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\minus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\plus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\r.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\F.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Fminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Fplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\I.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\L.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\minus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\plus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\r.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\T.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\white.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\T.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\white.gif" />
+    <Content Include="webctrl_client\1_0\treeview.htc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Accounts\Add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\EditRole.aspx.cs">
+      <DependentUpon>editrole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\EditRole.aspx.designer.cs">
+      <DependentUpon>editrole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\Index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\Index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\PermissionAdmin.aspx.cs">
+      <DependentUpon>permissionadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\PermissionAdmin.aspx.designer.cs">
+      <DependentUpon>permissionadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAdmin.aspx.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAdmin.aspx.designer.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAssignment.aspx.cs">
+      <DependentUpon>roleassignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAssignment.aspx.designer.cs">
+      <DependentUpon>roleassignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAdmin.aspx.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAdmin.aspx.designer.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\SetPass.aspx.cs">
+      <DependentUpon>setpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\SetPass.aspx.designer.cs">
+      <DependentUpon>setpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\userinfo.aspx.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\userinfo.aspx.designer.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\usermodify.aspx.cs">
+      <DependentUpon>usermodify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\usermodify.aspx.designer.cs">
+      <DependentUpon>usermodify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\userPass.aspx.cs">
+      <DependentUpon>userpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\userPass.aspx.designer.cs">
+      <DependentUpon>userpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\userupdate.aspx.cs">
+      <DependentUpon>userupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\userupdate.aspx.designer.cs">
+      <DependentUpon>userupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\AllList.aspx.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\AllList.aspx.designer.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsClassManage\Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\AllList.aspx.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\AllList.aspx.designer.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Modify2.aspx.cs">
+      <DependentUpon>Modify2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Modify2.aspx.designer.cs">
+      <DependentUpon>Modify2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Release.aspx.cs">
+      <DependentUpon>Release.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Release.aspx.designer.cs">
+      <DependentUpon>Release.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PBrand\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PBrand\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PBrand\AllList.aspx.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PBrand\AllList.aspx.designer.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PBrand\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PBrand\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PBrand\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PBrand\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PCategory\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PCategory\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PCategory\AllList.aspx.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PCategory\AllList.aspx.designer.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PCategory\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PCategory\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PCategory\IndexTree.aspx.cs">
+      <DependentUpon>IndexTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PCategory\IndexTree.aspx.designer.cs">
+      <DependentUpon>IndexTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PCategory\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PCategory\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\AllList.aspx.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\AllList.aspx.designer.cs">
+      <DependentUpon>AllList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product\Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product\Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Relogin.aspx.cs">
+      <DependentUpon>Relogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Relogin.aspx.designer.cs">
+      <DependentUpon>Relogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShowCallBoard.aspx.cs">
+      <DependentUpon>ShowCallBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShowCallBoard.aspx.designer.cs">
+      <DependentUpon>ShowCallBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Spliter.aspx.cs">
+      <DependentUpon>Spliter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Spliter.aspx.designer.cs">
+      <DependentUpon>Spliter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogIndex.aspx.cs">
+      <DependentUpon>logindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogIndex.aspx.designer.cs">
+      <DependentUpon>logindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogShow.aspx.cs">
+      <DependentUpon>logshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogShow.aspx.designer.cs">
+      <DependentUpon>logshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\makesql.aspx.cs">
+      <DependentUpon>makesql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\makesql.aspx.designer.cs">
+      <DependentUpon>makesql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\modify.aspx.cs">
+      <DependentUpon>modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\modify.aspx.designer.cs">
+      <DependentUpon>modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\show.aspx.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\show.aspx.designer.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\treelist.aspx.cs">
+      <DependentUpon>treelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\treelist.aspx.designer.cs">
+      <DependentUpon>treelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\toindex.aspx.cs">
+      <DependentUpon>toindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\toindex.aspx.designer.cs">
+      <DependentUpon>toindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Assistant.cs" />
+    <Compile Include="Components\DataToExcel.cs" />
+    <Compile Include="Components\UserLog.cs" />
+    <Compile Include="Controls\CheckRight.ascx.cs">
+      <DependentUpon>checkright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckRight.ascx.designer.cs">
+      <DependentUpon>checkright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CopyRight.ascx.cs">
+      <DependentUpon>copyright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CopyRight.ascx.designer.cs">
+      <DependentUpon>copyright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CPZS.aspx.cs">
+      <DependentUpon>CPZS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CPZS.aspx.designer.cs">
+      <DependentUpon>CPZS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMsg.aspx.cs">
+      <DependentUpon>ErrorMsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorMsg.aspx.designer.cs">
+      <DependentUpon>ErrorMsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Greybox.aspx.cs">
+      <DependentUpon>Greybox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Greybox.aspx.designer.cs">
+      <DependentUpon>Greybox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GSJJ.aspx.cs">
+      <DependentUpon>GSJJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GSJJ.aspx.designer.cs">
+      <DependentUpon>GSJJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GSRY.aspx.cs">
+      <DependentUpon>GSRY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GSRY.aspx.designer.cs">
+      <DependentUpon>GSRY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GSXW.aspx.cs">
+      <DependentUpon>GSXW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GSXW.aspx.designer.cs">
+      <DependentUpon>GSXW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LXWM.aspx.cs">
+      <DependentUpon>LXWM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LXWM.aspx.designer.cs">
+      <DependentUpon>LXWM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin\Accounts\images\skin2\vssver2.scc" />
+    <None Include="Admin\Accounts\images\vssver2.scc" />
+    <None Include="Admin\Images\ftb\office2000\vssver2.scc" />
+    <None Include="Admin\Images\ftb\office2003\vssver2.scc" />
+    <None Include="Admin\Images\ftb\officeXP\vssver2.scc" />
+    <None Include="Admin\Images\ftb\vssver2.scc" />
+    <None Include="Admin\Images\MenuImg\vssver2.scc" />
+    <None Include="Admin\NewsManage\images\ftb\office2000\Thumbs.db" />
+    <None Include="Admin\NewsManage\images\ftb\office2000\vssver2.scc" />
+    <None Include="Admin\NewsManage\images\ftb\office2003\Thumbs.db" />
+    <None Include="Admin\NewsManage\images\ftb\office2003\vssver2.scc" />
+    <None Include="Admin\NewsManage\images\ftb\officeXP\Thumbs.db" />
+    <None Include="Admin\NewsManage\images\ftb\officeXP\vssver2.scc" />
+    <None Include="Admin\NewsManage\images\ftb\vssver2.scc" />
+    <None Include="Admin\Product\images\ftb\office2000\Thumbs.db" />
+    <None Include="Admin\Product\images\ftb\office2000\vssver.scc" />
+    <None Include="Admin\Product\images\ftb\office2003\Thumbs.db" />
+    <None Include="Admin\Product\images\ftb\office2003\vssver.scc" />
+    <None Include="Admin\Product\images\ftb\officeXP\Thumbs.db" />
+    <None Include="Admin\Product\images\ftb\officeXP\vssver.scc" />
+    <None Include="Admin\Product\images\ftb\vssver.scc" />
+    <None Include="greybox\Thumbs.db" />
+    <Content Include="Admin\PCategory\IndexTree.aspx" />
+    <Content Include="Greybox.aspx" />
+    <Content Include="greybox\AJS.js" />
+    <Content Include="greybox\AJS_fx.js" />
+    <Content Include="greybox\gb_scripts.js" />
+    <Content Include="greybox\gb_styles.css" />
+    <Content Include="greybox\g_close.gif" />
+    <Content Include="greybox\header_bg.gif" />
+    <Content Include="greybox\indicator.gif" />
+    <Content Include="greybox\loader_frame.html" />
+    <Content Include="greybox\next.gif" />
+    <Content Include="greybox\prev.gif" />
+    <Content Include="greybox\w_close.gif" />
+    <Content Include="Main.Master" />
+    <Content Include="ProductDetail.aspx" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="static_files\help.css" />
+    <Content Include="static_files\help.js" />
+    <Content Include="static_files\night_valley.jpg" />
+    <Content Include="static_files\night_valley_thumb.gif" />
+    <Content Include="static_files\night_valley_thumb.jpg" />
+    <Content Include="static_files\salt.jpg" />
+    <Content Include="static_files\salt_thumb.gif" />
+    <None Include="webctrl_client\1_0\Images\vssver2.scc" />
+    <None Include="webctrl_client\1_0\TreeImages\rtl\vssver2.scc" />
+    <None Include="webctrl_client\1_0\TreeImages\vssver2.scc" />
+    <None Include="webctrl_client\1_0\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\Accounts\Add.aspx.resx">
+      <DependentUpon>Add.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\EditRole.aspx.resx">
+      <DependentUpon>EditRole.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\Index.aspx.resx">
+      <DependentUpon>Index.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\PermissionAdmin.aspx.resx">
+      <DependentUpon>PermissionAdmin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\RoleAdmin.aspx.resx">
+      <DependentUpon>RoleAdmin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\RoleAssignment.aspx.resx">
+      <DependentUpon>RoleAssignment.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\UserAdmin.aspx.resx">
+      <DependentUpon>UserAdmin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\SetPass.aspx.resx">
+      <DependentUpon>SetPass.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\userinfo.aspx.resx">
+      <DependentUpon>userinfo.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\usermodify.aspx.resx">
+      <DependentUpon>usermodify.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\userPass.aspx.resx">
+      <DependentUpon>userPass.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\userupdate.aspx.resx">
+      <DependentUpon>userupdate.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Left.aspx.resx">
+      <DependentUpon>Left.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Logout.aspx.resx">
+      <DependentUpon>Logout.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Main.aspx.resx">
+      <DependentUpon>Main.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Relogin.aspx.resx">
+      <DependentUpon>Relogin.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ShowCallBoard.aspx.resx">
+      <DependentUpon>ShowCallBoard.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Spliter.aspx.resx">
+      <DependentUpon>Spliter.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\add.aspx.resx">
+      <DependentUpon>add.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\delete.aspx.resx">
+      <DependentUpon>delete.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\LogIndex.aspx.resx">
+      <DependentUpon>LogIndex.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\LogShow.aspx.resx">
+      <DependentUpon>LogShow.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\makesql.aspx.resx">
+      <DependentUpon>makesql.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\modify.aspx.resx">
+      <DependentUpon>modify.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\search.aspx.resx">
+      <DependentUpon>search.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\show.aspx.resx">
+      <DependentUpon>show.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\treelist.aspx.resx">
+      <DependentUpon>treelist.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\toindex.aspx.resx">
+      <DependentUpon>toindex.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Top.aspx.resx">
+      <DependentUpon>Top.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CheckRight.ascx.resx">
+      <DependentUpon>CheckRight.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CopyRight.ascx.resx">
+      <DependentUpon>CopyRight.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorMsg.aspx.resx">
+      <DependentUpon>ErrorMsg.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidateCode.aspx.resx">
+      <DependentUpon>ValidateCode.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Accounts\Controls\" />
+    <Folder Include="Images\ftb\office2000\" />
+    <Folder Include="Images\ftb\office2003\" />
+    <Folder Include="Images\ftb\officeXP\" />
+    <Folder Include="Images\htmlTextbox-img\CoolBlue\" />
+    <Folder Include="Images\htmlTextbox-img\Lovely\" />
+    <Folder Include="Images\MenuImg\" />
+    <Folder Include="Images\PagerHeader\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Controls">
+</Property><Property Name="解决方案文件" Value="D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Controls.sln">
+</Property><Property Name="用户选项文件" Value="D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Controls.suo">
+</Property><Property Name="Date" Value="2006年10月1日">
+</Property><Property Name="Time" Value="1:10">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Controls.sln" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Controls.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Controls.suo" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Controls.suo">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Controls.csproj" Description="项目文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Controls.csproj">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Controls.csproj.user" Description="项目用户文件成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Controls.csproj.user">
+</Event><Event ErrorLevel="0" Project="Controls" Source="AssemblyInfo.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="DisConnectEditCMDCheckin.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\DisConnectEditCMDCheckin.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="DisConnectEditCMDCheckout.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\DisConnectEditCMDCheckout.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="DisconnectEditingFunction.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\DisconnectEditingFunction.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="DrawPolygonTool.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\DrawPolygonTool.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmAbout.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmAbout.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmAnalysisOption.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmAnalysisOption.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmClosestFacility.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmClosestFacility.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmCostWeightLineDis.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmCostWeightLineDis.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmCreateShapeFile.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmCreateShapeFile.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmDensity.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmDensity.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmDotDensity.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmDotDensity.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmFind.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmFind.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmPointQuery.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmPointQuery.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRasterIDW.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRasterIDW.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRasterSpline.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRasterSpline.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRender.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRender.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRoute.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRoute.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmScene.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmScene.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmShortestPath.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmShortestPath.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmSmoothRaster.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmSmoothRaster.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmStraightLineDis.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmStraightLineDis.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="GISHelperFunction.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\GISHelperFunction.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="LicenseInitializer.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\LicenseInitializer.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Mainfrm.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Mainfrm.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="ModPublicClass.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\ModPublicClass.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="moveFeatureTool.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\moveFeatureTool.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="NetworkAnalysisToolBar.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\NetworkAnalysisToolBar.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="SelectedFeature.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\SelectedFeature.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="slovePathTool.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\slovePathTool.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="SpatialAnalysisOption.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\SpatialAnalysisOption.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="SpatialHelperFunction.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\SpatialHelperFunction.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="testRenderer.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\testRenderer.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="TOCHelper.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\TOCHelper.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="UpStreamTrace.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\UpStreamTrace.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Utility.cs" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Utility.cs">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmAbout.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmAbout.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmAnalysisOption.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmAnalysisOption.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmClosestFacility.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmClosestFacility.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmCostWeightLineDis.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmCostWeightLineDis.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmCreateShapeFile.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmCreateShapeFile.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmDensity.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmDensity.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmDotDensity.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmDotDensity.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmFind.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmFind.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmPointQuery.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmPointQuery.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRasterIDW.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRasterIDW.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRasterSpline.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRasterSpline.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRender.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRender.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmRoute.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmRoute.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmScene.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmScene.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmShortestPath.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmShortestPath.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmSmoothRaster.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmSmoothRaster.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="frmStraightLineDis.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\frmStraightLineDis.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Mainfrm.resx" Description="文件已成功备份为 D:\PPT\培训PPT\CSHARPDEMO\CSharp\Controls\Backup\Mainfrm.resx">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Controls.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Controls" Source="Controls.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Controls.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="Controls.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Controls" Source="Controls.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

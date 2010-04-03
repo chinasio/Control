@@ -1,0 +1,1 @@
+regasm Controls.exe /u
